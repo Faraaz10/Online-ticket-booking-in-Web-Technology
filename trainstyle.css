@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --green: rgb(156, 175, 136);
+    --dark-color: rgb(249, 248, 235);
+    --black: #444;
+    --light-color: #666;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --border-hover: 0.1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    --outline: #666;
+}
+
+* {
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.8s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+.container {
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.card {
+    border: var(--border);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.card-header {
+    background-color: var(--dark-color);
+    color: var(--green);
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-control {
+    font-size: 1.6rem;
+    border: var(--border);
+}
+
+.btn-primary {
+    background-color: var(--green);
+    border: none;
+    color: var(--dark-color);
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+    transition: background-color 0.3s;
+}
+
+.btn1{
+    background-color: var(--green);
+    border: none;
+    color: var(--dark-color);
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+    transition: background-color 0.3s;
+
+}
+
+.btn-primary:hover {
+    background-color: var(--black);
+}
+
+.table {
+    margin-top: 2rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th,
+.table td {
+    border: var(--border);
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.table th {
+    background-color: var(--dark-color);
+    color: var(--green);
+    font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+.btn-success {
+    background-color: var(--green);
+    border: none;
+    color: var(--dark-color);
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: var(--black);
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 0;
+    }
+    .container {
+        padding-bottom: 6rem;
+    }
+}
+
+input[type="date"] {
+    font-size: 1.6rem;
+    border: var(--border);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--dark-color);
+    color: var(--black);
+    width: 300px; /* Change this to a specific value if needed */
+    max-width: 300px; /* Set a maximum width */
+}
+
+input[type="date"]::placeholder {
+    color: var(--light-color);
+}
+
+input[type="date"]:focus {
+    border: var(--border-hover);
+    box-shadow: 0 0 0.5rem var(--black);
+    outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background-color: var(--green);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.loader-container{
+    position: fixed;
+    top:0;left:0;
+    height:100%;
+    width:100%;
+    z-index:10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.loader-container.active{
+    display: none;
+}
+
+.loader-container img{
+    height: 45rem;
+}
+
+
+
+
+
+
+

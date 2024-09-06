@@ -1,0 +1,70 @@
+.class1 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(249,248,235);
+    border: 3px solid  rgb(156, 175,136);
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+
+h1 {
+    color: rgb(156, 175,136);
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 20px; 
+    position:relative;
+    left:0px;
+    
+}
+
+
+label {
+    color: rgb(156, 175,136);
+    font-size: 18px;
+    margin-bottom: 5px; /* Adding some space below the label */
+}
+
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+    margin-bottom: 10px; /* Adding some space below the input field */
+}
+
+
+button {
+    padding: 10px;
+    color:  rgb(156, 175,136);
+    background-color: rgb(249,248,235);
+    border: 2px solid rgb(156, 175,136);
+    border-radius: 10px;
+    font-weight: bold;
+    width: 20%;
+    position: relative;
+    left:0%;
+    cursor: pointer;
+}
+button:hover{
+    
+    color: rgb(156, 175,136);
+}
+
+
+
+p{
+    color:  rgb(156, 175,136);
+    font-size: 18px;
+
+}
+body{
+    background-color:rgb(156, 175,136) ;
+}
+

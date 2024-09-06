@@ -1,0 +1,111 @@
+body{
+    background-color:rgb(156, 175, 136) ;
+    margin: 80px auto;
+    
+ }
+ 
+ div.one {
+    font-family: 'Courier New', Courier, monospace;
+    /*background-color:rgb(249, 248, 235);*/
+    background: rgba(255,255,255,9);
+    border:2px solid  rgb(156, 175, 136);
+    width: 600px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+div.two {
+    
+    border:2px solid  rgb(156, 175, 136);
+    border-radius: 20px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+div.two img {
+    display: inline-block; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+h1 {
+    color: rgb(156, 175, 136);
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 20px; 
+    position:relative;
+    left:0px;
+    
+}
+
+label {
+    color: rgb(156, 175, 136);
+    font-size: 18px;
+    margin-bottom: 5px; 
+    text-align: left;
+    width: 90px;
+    display: inline-block;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(156, 175, 136);
+    width: 50%;
+    margin-bottom: 10px; 
+}
+
+
+button {
+    padding: 10px;
+    color: rgb(156, 175, 136);
+    background-color: rgb(249, 248, 235);
+    border: 2px solid rgb(156, 175, 136);
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: medium;
+    width: 20%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+span {
+    background: rgb(156, 175, 136);
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display:flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+button:hover span {
+    color: rgb(249, 248, 235);
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(156, 175, 136);;
+}
